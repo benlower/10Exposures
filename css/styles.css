@@ -45,7 +45,7 @@ k
 #Indicators span { display: inline-block; height: 10px; width: 10px; margin: 0 10px 0 0; padding: 0; -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; border-radius:5px; background: #c5c5c5; overflow:hidden; }
 #Indicators span.current{ background: #EEBF02; }
 
-#outer {left: 50%; position:absolute; width: 903px}
+#outer {top: 0px; left: 50%; position:absolute; width: 903px}
 #inner {position: absolute; left: -451px;}
 
 /* border of 28 */
