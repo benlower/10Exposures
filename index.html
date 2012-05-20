@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tenexposures | Your Perfect 10</title>
+	<meta name="author" content="10 Exposures http://10exposures.com" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link href="css/styles.css" type="text/css" rel="stylesheet" />
+	
+  <!-- <link href="../photoswipe.css" type="text/css" rel="stylesheet" /> -->
+	
+	<!-- <script type="text/javascript" src="../lib/klass.min.js"></script> -->
+	<!-- <script type="text/javascript" src="../code.photoswipe-3.0.4.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" language="javascript"></script>
+    	<script src="js/cloudmine.js" language="javascript"></script>
+	<script src="js/tenexp.js" language="javascript"></script>
+	
+	
+	<script type="text/javascript">
+
+		(function(window, PhotoSwipe){
+		
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {},
+					instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
+			
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
+		
+	</script>
+	
+</head>
+<body>
+
+<div id="header" class='shadow'>
+  <img src="./images/logo.png" id="logo">
+  <span id="signup"><a href='#'>beta signup</a></span>
+  <span id="username">Put the user name here</span>
+</div>
+
+<div id="MainContent">
+	<ul id="Gallery" class="gallery">
+		<li><a href="images/full/001.jpg"><img id="img0" alt="Image 001" class="photo shadow"/></a></li>
+		<li><a href="images/full/002.jpg"><img id="img1" alt="Image 002" class="photo shadow"/></a></li>
+		<li><a href="images/full/003.jpg"><img id="img2" alt="Image 003" class="photo shadow"/></a></li>
+		<li><a href="images/full/004.jpg"><img id="img3" alt="Image 004" class="photo shadow"/></a></li>
+		<li><a href="images/full/006.jpg"><img id="img4" alt="Image 006" class="photo shadow"/></a></li>
+		<li><a href="images/full/008.jpg"><img id="img5" alt="Image 008" class="photo shadow"/></a></li>
+		<li><a href="images/full/005.jpg"><img id="img6" alt="Image 005" class="photo shadow"/></a></li>
+		<li><a href="images/full/007.jpg"><img id="img7" alt="Image 007" class="photo shadow"/></a></li>
+		<li><a href="images/full/009.jpg"><img id="img8" alt="Image 009" class="photo shadow"/></a></li>
+		<li><a href="images/full/010.jpg"><img id="img9" alt="Image 010" class="photo shadow"/></a></li>
+	</ul>
+	
+</div>	
+<br />
+<br />
+</body>
+</html>
+
+
+
+
+
+
