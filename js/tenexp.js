@@ -18,7 +18,7 @@
         }
 
         var buildSearchQueryWithParams = function(album_info){
-          return '[type = "photo", userId = ' + album_info.userId + ', albumId=' + album_info.albumId + ']';
+          return '[type = "photo", userId = "' + album_info.userId + '", albumId="' + album_info.albumId + '"]';
         }
 
         var albumInfo = getAlbumInfo();
@@ -28,10 +28,12 @@
 
         cloudmine.search(searchString, function(result){
           console.log(result);
-	  var i = 0;
+	  var i;
           result.success.forEach(function(key, value){
+	    console.log(key);
+	    i = key.substring(key.length-1);
             $("#img" + i).attr('src', cloudmine.getFileURL(value.fileId));
-	    i++;
+	    $("#img" + i).parent().attr('href', cloudmine.getFileURL(value.fileId));
           });
         });
       });
